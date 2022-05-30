@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of canceled heroes</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+
+<div class="text-logo">
+    
+    
+    <img class="mainicon__Img" src="img/ui/mainicon.png" alt="">
+
+    <h1 class="logo__title">Age of canceled heroes</h1>
+ 
+</div>
+
+
+   
+   
+
+<div class="allContainers">
+
+
+
+
+    <div class="bigContainer ">
+
+        
+        <div class="container">
+        
+            
+
+            <div class="box">
+                <h2 class="name">Abraham Flipper</h2>
+            
+                
+                <img src="img/herofull.png" class="mainhero" alt="">
+                <div class="circle"></div>
+                
+            </div>
+
+        
+        </div>
+
+    
+
+        
+
+    </div>
+
+<!--     <div class="btnContainer" id="btnContainerDescription">
+
+        <a href="#descriptionBox"> <button  class="button-learnmore" id="button-learnmore" > <span class="button-learnmore__text">Tell me about lore</span></button></a>
+        
+    </div> -->
+
+    <div class="bigContainer ">
+        <div class="descriptionBox" id="descriptionBox">
+            <h2 class="description__text">Dark times are coming to the kingdom. But in THAT kingdom there is no such thing as a hero. Knights and warriors turned out to be assholes and they were fired from service. Therefore, only the king can save everyone. Or ruin. We will see. </h2>
+            
+        
+        </div>
+       
+        
+    </div>
+
+    <div class="btnContainer" id="btnContainer__Play">
+
+        <button class="button-play" id="button-play" > <span class="button-play__text">Try to save the world!</span></button>
+        
+    </div>
+
+</div>
+
+<audio controls autoplay loop>
+    <source src="sounds/mainmenu/background-music_silent.wav" type="audio/ogg">
+    
+</audio>
+
+
+<audio class="buttonplay__sound" src="sounds/mainmenu/Fantasy_Game_UI_Earth_Confirm.wav"></audio>
+<audio class="buttonplay__hover" src="sounds/mainmenu/Fantasy_Game_Item_Crafting_Metal_Shield_A.wav"></audio>
+<audio class="buttonLearnmore__sound" src="sounds/mainmenu/Fantasy_Game_Item_Crafting_Crystal_Bow_B.wav"></audio>
+<audio class="buttonLearnmore__hover" src="sounds/mainmenu/Builder_Game_Trinket_Small_B_1.wav"></audio>
+
+
+
+
+<script src="script.js"></script>
+<script src="vanilla-tilt.min.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".box"), {
+		max: 25,
+		speed: 400
+	});
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- <img src="img/hero.png" class="mainhero" alt=""> -->

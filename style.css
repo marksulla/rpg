@@ -1,0 +1,652 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+@font-face {
+    font-family: "BreatheFire";
+    src: url(fonts/breathe-fire-font/BreatheFire-65pg.ttf);
+}
+@font-face {
+    font-family:"Frozito" ;
+    src: url(fonts/frozito-font/Frozito-eZ99g.ttf);
+}
+@font-face {
+    font-family: "WildBreath" ;
+    src: url(fonts/the-wild-breath-of-zelda-font/TheWildBreathOfZelda-15Lv.ttf);
+}
+@font-face {
+    font-family: "Wizzta" ;
+    src: url(fonts/wizzta-font/Wizzta-vaDA.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;
+    box-sizing: border-box;
+    
+  
+
+
+}
+
+
+  body {
+    min-height: 100vh;
+    /*     background: #131313; 
+   */
+    background: url('/img/backgrounds/quentin-mabille-vertred.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    /* background-attachment: fixed; */
+  }
+/* cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;	
+ */
+
+
+
+.text-logo {
+    margin: 30px auto;
+    filter: drop-shadow(0.2rem 0.2rem 0.4rem);
+}
+
+.container__Main-Icon {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 1200px;
+    
+
+
+}
+
+.mainicon {
+  
+
+}
+
+.logo__title {
+    filter: drop-shadow(0.4rem 0.5rem 2rem);
+   
+   
+    
+}
+.logo__title h1 {
+   
+   
+}
+
+
+.mainicon__Img {
+    width: 70px;
+    margin: 0px auto;
+    display: table;
+    filter: drop-shadow(0.2rem 0.3rem 0.2rem);
+    margin-bottom: 5px;
+    /* animation-name: mainicon-move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; */
+}
+
+
+@keyframes mainicon-move {
+    0% { 
+        transform: rotate(0deg);
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.allContainers {
+  
+}
+
+.bigContainer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 15px auto;
+   
+}
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+   
+  
+
+}
+
+.box {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+/*     background: #232323;
+ */
+    background: url(img/ui/mainwindow__withtexture.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 40px;
+    transform-style: preserve-3d;
+    background-color: rgba(0,0,0,0.7);
+    backface-visibility: hidden;
+    transform: perspective(600px) rotateY(0deg);
+    filter: drop-shadow(1px 10px 10px rgb(59, 58, 58));
+
+
+
+
+}
+.box::before {
+    content: 'WORST KING';
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Skranji', cursive;
+
+}
+/* .box::after {
+    content: 'EVER';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2em;
+    font-weight: 900;
+    color: #fff;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+    font-family: 'Skranji', cursive;
+} */
+
+.box:hover::before {
+    opacity: 0.3;
+
+}
+.box:hover::after {
+    opacity: 0.3;
+
+}
+
+
+.name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    transform: translate3d(0,0,75px);
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    font-family: 'Wizzta', cursive;
+    font-size: 2rem;
+
+}
+.box:hover .name {
+    top: 40px;
+    opacity: 1;
+
+}
+
+/* .chooseYourHero {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    left: 40%;
+    transform-style: preserve-3d;
+    transform: translate3d(-30%, 0%, 60px);
+    width: 30%;
+    height: 15%;
+    color: #fff;
+    background: #333;
+    background: url(img/ui/woodButton.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    padding: 4px 5px;
+    border-radius: 0px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+    font-family: 'Skranji', cursive;
+    font-size: 15px;
+    
+} */
+
+.button-play-container {
+    margin: 30px auto;
+    display: flex;
+    
+   
+    text-align: center;
+    justify-content: center;
+
+}
+
+.btnContainer {
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.button-learnmore {
+    margin: 30px 10px;
+    display: inline-block;
+    background: url(img/ui/woodButton.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    color:#fff;
+    padding: 10px 10px;
+    width: 120px;
+    height: 80px;
+    border: none;
+    outline: none;
+    font-family: 'Frozito', cursive;
+    font-size: 15px;
+    cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;
+    opacity: 1;
+    /* filter:drop-shadow(0.1rem 0.1rem 1rem); */
+    filter: drop-shadow(1px 5px 3px #000);
+
+}
+
+.button-learnmore span {
+    font-family: 'Frozito', cursive;
+    font-size: 15px;
+    cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;
+    opacity: 1;
+}
+
+
+.button-learnmore:hover {
+    animation: rotate 0.6s ease-in-out both;
+    filter:drop-shadow(0.4rem 0.5rem 2rem);
+    filter:brightness(112%);
+   
+    
+
+}
+.button-learnmore:hover .button-learnmore {
+    animation: storm 0.7s ease-in-out both;
+    
+    
+
+}
+
+.button-learnmore:active {
+    transform: translate(3px, 3px);
+    animation: activerotate 0.7s ease-in-out both;
+    filter: drop-shadow(0.4rem 0.4rem 1rem);
+
+    
+
+}
+.button-learnmore:active .descriptionBox {
+   opacity: 1;
+
+    
+
+}
+
+
+
+
+
+.box:hover .chooseYourHero {
+    bottom: 30px;
+    opacity: 1;
+
+
+}
+
+
+/* .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    transition: 0.5s;
+    background: #75b159;
+
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 10;
+    opacity: 1;
+
+} */
+/* background: #75b159;
+ */
+/* .box:hover .circle {
+    transform: translate3d(-50%, -50%, 25px);
+
+}
+ */
+
+
+
+.mainhero {
+    position: absolute;
+
+    height: auto;
+    max-width: 350px;
+    top: 55%;
+    left: 35%;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 1px);
+    z-index: 110;
+
+
+}
+
+.box:hover .mainhero {
+    transform: translate3d(-50%, -50%, 50px);
+
+
+
+}
+
+.box:hover .box {
+    overflow: auto;
+
+
+
+}
+
+
+
+
+.descriptionBox {
+    margin: 10px 10px;
+    display: flex;
+    background: url(img/ui/oldscroll.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    color:#fff;
+    padding: 80px 30px 10px 30px;;
+    width: 350px;
+    height: 450px;
+    border: none;
+    outline: none;
+    font-family: 'Frozito', cursive;
+    font-size: 15px;
+    cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;
+    opacity: 1;
+    
+    /* filter:drop-shadow(0.1rem 0.1rem 1rem); */
+    filter: drop-shadow(0px 10px 20px rgb(50, 49, 49));
+    transition: 0.6s linear;
+   
+
+}
+
+
+
+
+.description__text {
+    margin: 10px;
+}
+
+/* .descriptionBox::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+} */
+
+
+
+.descriptionBox:before:hover .descriptionBox:before {
+    
+    clip-path: circle(400px at center);
+
+}
+
+
+
+
+.button-play {
+    margin: 30px 10px;
+    display: inline-block;
+    background: url(img/ui/woodButton.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    color:#fff;
+    padding: 10px 10px;
+    width: 150px;
+    height: 100px;
+    border: none;
+    outline: none;
+    font-family: 'Frozito', cursive;
+    font-size: 15px;
+    cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;
+    opacity: 1;
+    /* filter:drop-shadow(0.1rem 0.1rem 1rem); */
+    filter: drop-shadow(1px 5px 3px #000);
+    
+
+
+    
+}
+
+
+.button-play span {
+    font-family: 'Frozito', cursive;
+    font-size: 15px;
+    cursor: url('img/ui/cursors/sword_main-cursor.png'), auto;
+    opacity: 1;
+
+
+}
+
+.button-play:hover {
+    animation: rotate 0.6s ease-in-out both;
+    filter:drop-shadow(0.4rem 0.5rem 2rem);
+    filter:brightness(112%);
+   
+    
+
+}
+.button-play:hover .button-play {
+    animation: storm 0.7s ease-in-out both;
+    
+    
+
+}
+
+.button-play:active {
+    transform: translate(3px, 3px);
+    animation: activerotate 0.7s ease-in-out both;
+    filter: drop-shadow(0.4rem 0.4rem 1rem);
+    
+
+    
+
+}
+/* 
+@keyframes storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+        }
+   
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+   
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+   
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+   
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    
+   
+    
+} */
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+        }
+   
+    25% {
+        transform: rotate(6deg) translate3d(0, 0, 0);
+    }
+   
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+   
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+   
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    
+   
+    
+}
+
+@keyframes activerotate {
+    0% {
+        transform: scale(1) translate3d(0, 0, 0);
+        }
+   
+   
+   
+    50% {
+        transform: scale(0.85) translate3d(0, 0, 0);
+    }
+   
+   
+   
+    100% {
+        transform: scale(1) translate3d(0, 0, 0);
+    }
+
+    
+   
+    
+}
+
+
+
+
+/* Text */
+h1{
+    letter-spacing: 4px;
+    /* font-family: 'Skranji', cursive; */
+    
+   
+ font-family: 'BreatheFire', cursive;  
+
+    color: #ffc000;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 1px 10px rgb(82, 77, 47);
+    text-align: center;
+    text-transform: uppercase;
+
+  }
+
+  /*  color: #ffc000; */
+
+  /* Glow */
+  
+h2{
+    letter-spacing: 2px;
+    /* font-family: 'Skranji', cursive; */
+    
+   
+    font-family: 'BreatheFire', cursive;  
+
+    color: #793d26;
+    font-size: 24px;
+    font-weight: 600;
+    /* text-shadow: 0 1px 10px #161616; */
+    text-align: center;
+    text-transform:none;
+    text-shadow: 1px 2px  #f4ccab;
+
+  }
+
+  /*  color: #ffc000; */
+
+  /* Glow */
+  
+
+/* Effects fade in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}
+
+
+
+
+
+/* Media Query: Tablet or smaller  */
+@media screen and (max-width: 1000px) {
+    .allContainers {
+        margin: auto 10px;
+    }
+
+ 
+
+  
+}
